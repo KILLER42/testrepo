@@ -1,48 +1,29 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Homework 2</title>
-		<style>
-			table, td, th {
-				border: 2px solid black;
-			}
-			th, td {
-				width: 70px;
-				height: 50px;
-			}
-		</style>
+		<title>Homework 4</title>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 
 	<body>
-		<div style="width: 1200px; margin: 0 auto;">
-			<div style="color: rgb(0, 0, 0); background: rgb(137, 185, 98); font-size: 24px; line-height: 30px; font-weight: 400; text-align: justify; width: 500px; height: 200px; overflow: hidden;  margin: 0 auto 50px; padding: 20px; border: 5px solid blue; box-sizing: border-box;">
-				Lorem ipsum dolor, sit amet consectetur adipisicing <span style="font-weight: 800; color: rgb(0, 225, 255);">elit</span> . Molestias a porro magnam quam reiciendis libero impedit 			</div>
-			<span style="color: red; background: rgb(255, 145, 0); font-size: 24px; line-height: 30px; font-weight: 400; text-align: justify; width: 500px; height: 200px; overflow: hidden; margin: 0 auto 50px;">
-				Lorem ipsum dolor, sit amet consectetur elit. Molestias a porro magnam quam reiciendis libero impedit optio, ab nihil, dolor eos dignissimos architecto fugit repellat eum ipsa rem exercitationem eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nunc id rutrum ligula, vitae aliquet ipsum. <span style="text-transform: uppercase;">inventore</span>
-			</span>
-			<table>
-				<tr>
-					<td>Простая ячейка</td>
-					<td colspan="2">Molestias</td>
-					<td rowspan="3">reiciendis</td>
-				</tr>
-				<tr>
-					<td rowspan="2">dolor eos</td>
-					<td>architecto</td>
-					<td rowspan="2">magnam quam</td>
-				</tr>
-				<tr>
-					<td>consectetur elit</td>
-				</tr>
-			</table>
+		<div class="box container">
+			<div class="notebox" id="color" style="color: rgb(141, 7, 252);">Lorem ipsum dolor, sit amet consectetur adipisicing elit . Molestias a porro magnam quam reiciendis libero impedit</div>
+			<div class="notebox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur suscipit assumenda quod totam sunt. Quia, illo! Voluptatibus temporibus dolore numquam!</div>
+			<div class="notebox danger">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
 			<div>Curabitur dolor ante, tempus id auctor sit amet, venenatis in turpis. Proin ultricies dolor turpis. Phasellus sit amet dui venenatis, feugiat ligula quis, pretium sapien.</div>
+			<div class="links">
 			<a href="https://example.com" target="_blank">Example</a>
 			<a href="second-page.html">Вторая страница</a>
 			<a href="https://notino.ua/" target="_blank" style="text-decoration: none; color:brown;">Notino</a>
 
 			<a href="about/index.html">О нас</a>
+			</div>
 		</div>
+
+		<script>
+			document.querySelector('#color').style.color = 'orange'
+		</script>
 	</body>
 </html>
